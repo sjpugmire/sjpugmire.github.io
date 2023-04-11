@@ -89,21 +89,35 @@ nav a:hover {
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+      /* display: flex;
+
+    flex-direction: column; */
+
     font-size: 1.25em;
+
     list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
 }
 
 nav li {
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
     border-bottom: 1px solid #FEF6C2;
+
+    /* padding: .5em 1em;
+
+    width: 100%; */
+}
+
+nav li a {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: .5em 1em;
+
 }
 
 main {
@@ -146,6 +160,24 @@ img {
     background-color: #231814;
     padding: 0;
     font-family: 'Itim', cursive;
+}
+
+.item {
+    background-color: #FAF9F7;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
+}
+
+.item img {
+    float: right;
+}
+
+#herocouch {
+    height: 300px;
+    background-image: url(images/herocouch.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #homehero {
@@ -220,6 +252,12 @@ footer {
     border-top: 2px solid #8C3826;
 }
 
+.current {
+	text-decoration-line:underline;
+    background-color:antiquewhite;
+    font-weight:bolder;
+    
+}
 /* Medium Layout */
 
 @media (min-width: 600px) {
